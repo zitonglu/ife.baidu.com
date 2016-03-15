@@ -4,6 +4,7 @@
 body{
 	background-color: #dedede;
 }
+/*导航*/
 header{
 	margin: 0px;
 	padding: 0px;
@@ -23,8 +24,15 @@ header nav ul li{
 header a{
 	color: #fff;
 }
+header a:hover{
+	color: #ddd;
+}
 .active{
 	color: #939393;
+}
+header img{
+	margin-left:40px;
+	max-width:200px;
 }
 article{
 	margin: 20px;
