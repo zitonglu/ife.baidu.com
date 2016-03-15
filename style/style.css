@@ -2,3 +2,16 @@
 	margin: 0px;
 	padding: 0px
 }
+body{
+	background-color: #dedede;
+}
+article{
+	background-color: #fff;
+}
+aside{
+	background-color: #fff;
+}
+footer{
+	background: #000;
+	color: #fff;
+}
