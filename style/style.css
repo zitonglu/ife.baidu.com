@@ -8,6 +8,13 @@ header{
 	margin: 0px;
 	padding: 0px;
 	background-color: #333;
+	color: #fff;
+}
+header a{
+	color: #fff;
+}
+.active{
+	color: #939393;
 }
 article{
 	margin: 20px;
