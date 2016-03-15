@@ -23,11 +23,12 @@ header nav ul li{
 }
 header a{
 	color: #fff;
+	text-decoration:none;
 }
 header a:hover{
 	color: #ddd;
 }
-.active{
+.active,.active a,.active a:hover{
 	color: #939393;
 }
 header img{
