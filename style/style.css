@@ -73,6 +73,28 @@ figure div img{
 	max-width: 164px;
 	height: auto;
 }
+/*table's style*/
+article table{
+	width: 100%;
+	text-align: left;
+	border-collapse:collapse;
+	border: solid #999;
+	border-width:1px; 
+}
+article table th{
+	border:solid #999;
+	border-width:0 1px 1px 0;
+	padding-left:5px;
+}
+article table td {
+	padding-left:5px;
+	background-color: #A7A7A7;
+	font-weight: 800;
+} 
+article table thead{
+	color: #fff;
+	background-color: #000;
+}
 aside{
 	margin: 20px;
 	padding: 20px; 
