@@ -138,8 +138,13 @@ aside form textarea{
 .inputSubmit:focus,.inputSubmit:hover{
 	background-color: #3390b7;
 }
-
+/*底部*/
 footer{
 	background: #000;
 	color: #fff;
+	min-height: 100px;
+	text-align: center;
+}
+footer p{
+	padding-top:30px;
 }
