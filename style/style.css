@@ -50,12 +50,16 @@ article{
 	background-color: #fff;
 }
 article p{
-	line-height: 24px;
+	line-height: 30px;
 	text-indent: 2em;
 }
 .tags,.tags time{
 	color:#939393;
 	font-size: 14px;
+}
+article ul li{
+	list-style:none;
+	line-height: 30px;
 }
 aside{
 	margin: 20px;
