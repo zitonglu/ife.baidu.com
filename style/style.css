@@ -49,6 +49,10 @@ article{
 	padding: 20px; 
 	background-color: #fff;
 }
+.tags,.tags time{
+	color:#939393;
+	font-size: 14px;
+}
 aside{
 	margin: 20px;
 	padding: 20px; 
