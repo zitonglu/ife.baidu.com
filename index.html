@@ -146,23 +146,56 @@
 <!-- 侧栏 -->
 <aside>
 	<h1>这里以后是一个侧栏，这是侧栏的标题</h1>
-	<h2>侧栏注册窗口标题</h2>
+	<h2 style="display: none">侧栏注册窗口标题</h2>
 <form action="">	
-	<p>请输入邮箱地址：<input type="email" placeholder="这是一个文本输入框"/></p>
-	<p>邮箱地址请按要求个数输入</p>
-	<p>请输入密码：<input type="password" placeholder="这是一个文本输入框"/>请重复输入密码：<input type="password" placeholder="这是一个文本输入框"/></p>
-	<p>密码请为6-16位英文数字</p>
-	<p>性别：
-	<input type="radio" name="sex" value="male" checked="checked" />男
-	<input type="radio" name="sex" value="female"/>女
-	城市：
-	<select>
-		<option>北京</option>
-		<option>上海</option>
-		<option>广州</option>
-	</select>
-	爱好：<input type="checkbox" name="habit">运动 <input type="checkbox" name="habit">艺术 <input type="checkbox" name="habit">科学 个人描述：<textarea row="2" placeholder="这是一个多行输入框，输入您的个人描述"></textarea> <input type="submit" value="确认提交">
-	</p>
+	<div>
+		<label for="email" class="col-sm-4 text-right">请输入邮箱地址：</label>
+		<div class="col-sm-8">
+			<input type="email" name="email" placeholder="这是一个文本输入框"/><br /><span>邮箱地址请按要求个数输入</span>
+		</div>
+	</div>
+	<div>
+		<label for="password1" class="col-sm-4 text-right">请输入密码：</label>
+		<div class="col-sm-8">
+			<input type="password" name="password1" placeholder="******" />
+		</div>
+	</div>
+	<div>
+		<label for="password2" class="col-sm-4 text-right">请重复输入密码：</label>
+		<div class="col-sm-8">
+			<input type="password" name="password2" placeholder="这是一个文本输入框"/><br /><span>密码请为6-16位英文数字</span>
+		</div>
+	</div>
+	<div>
+		<label for="sex" class="col-sm-4 text-right">性别：</label>
+		<div class="col-sm-8">
+			<input type="radio" name="sex" value="male" checked="checked" />男
+			<input type="radio" name="sex" value="female"/>女
+		</div>
+	</div>
+	<div>
+		<label for="city" class="col-sm-4 text-right">城市：</label>
+		<div class="col-sm-8">
+			<select>
+				<option>北京</option>
+				<option>上海</option>
+				<option>广州</option>
+			</select>
+		</div>
+	</div>
+	<div>
+		<label for="habit" class="col-sm-4 text-right">爱好：</label>
+		<div class="col-sm-8">
+			<input type="checkbox" name="habit">运动 <input type="checkbox" name="habit">艺术 <input type="checkbox" name="habit">科学
+		</div>
+	</div>
+	<div>
+		<label for="text" class="col-sm-4 text-right">个人描述：</label>
+		<div class="col-sm-8">
+			<textarea row="2" name="text" type="text" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+		</div>
+	</div>
+	<input type="submit" class="inputSubmit" value="确认提交">
 </form>
 </aside>
 <!-- 版权 -->
