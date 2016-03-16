@@ -61,6 +61,18 @@ article ul li{
 	list-style:none;
 	line-height: 30px;
 }
+figure div{
+	margin-bottom: 16px;
+	padding: 8px;
+	text-align: center;
+	width: 180px;
+	border:solid 1px #E3E3E3;
+}
+figure div img{
+	margin-top:8px;
+	max-width: 164px;
+	height: auto;
+}
 aside{
 	margin: 20px;
 	padding: 20px; 
