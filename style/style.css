@@ -83,12 +83,13 @@ article table{
 	border: solid #999;
 	border-width:1px; 
 }
-article table th{
+article table th,
+article table td{
 	border:solid #999;
 	border-width:0 1px 1px 0;
 	padding-left:5px;
 }
-article table td {
+article table .tableBottom td {
 	padding-left:5px;
 	background-color: #A7A7A7;
 	font-weight: 800;
