@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<title>任务三：三栏式布局</title>
+</head>
+<style type="text/css">
+	body{background-color: #eee;margin: 0px;padding: 20px;}
+	.box,
+	.left,
+	.right,
+	.main,
+	.teamName{padding: 20px;margin:20px;border: solid 1px #999;}
+	.left{
+		float: left;
+		width: 200px;
+	}
+	.left span{
+
+	}
+	.right{
+		float: right;
+		width: 120px;
+	}
+	.main{
+		overflow: hidden;
+	}
+	.teamLOGO{
+		max-width: 80px;
+		height: auto;
+	}
+	.claerfix{
+		content:" ";
+		display:block;
+		clear:both;
+	}
+
+</style>
+<body>
+	<div class="box">
+		<div class="left">
+			<img src="images/logo-3-1.png" alt="团队LOGO" class="teamLOGO">
+			<span>团队名称</span>
+		</div>
+		<div class="right">1</div>
+		<div class="main">1</div>
+		<div class="claerfix"></div>
+	</div>
+</body>
+</html>
