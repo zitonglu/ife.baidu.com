@@ -17,7 +17,7 @@
 		float: left;
 		display: block;
 		margin:20px;
-		max-width: 80px;
+		width: 80px;
 		height: auto;
 		border: 1px solid #999;
 	}
@@ -43,12 +43,30 @@
 	}
 	.main{
 		overflow: hidden;
+		padding: 20px;
 	}
-
 	.claerfix{
 		content:" ";
 		display:block;
 		clear:both;
+	}
+	/*衍生代码*/
+	.teamManpic{
+		display: inline-block;
+		background-color: #ddd;
+		width: 78px;
+		height: 78px;
+		text-align: center;
+		border: 1px solid #999;
+	}
+	.teamManpic>div{
+		font-size: 12px;
+		line-height: 4px;
+		position: relative;
+		border:none;/*外框集成父集，所以这里影藏*/
+		background-color: transparent;/*背景色镂空*/
+		top:30%;
+		transform: translateY(-50%);/*竖向缩50%*/
 	}
 
 </style>
@@ -59,13 +77,33 @@
 			<span>阡陌前端小组<br>……</span>
 		</div>
 		<div class="right">
-			<li><a href="#"><img src="images/team1.jpg" alt="炎炎"></a></li>
-			<li><a href="#"><img src="images/team2.jpg" alt="油头小歪"></a></li>
-			<li><a href="#"><img src="images/team3.jpg" alt="烽烟无限"></a></li>
-			<li><a href="#"><img src="images/team4.jpg" alt="紫铜炉"></a></li>
-			<li><a href="#"><img src="images/team5.jpg" alt="some1"></a></li>
+			<li><a href="#"><img src="images/team1.jpg" title="队员名称" alt="炎炎"></a></li>
+			<li><a href="#"><img src="images/team2.jpg" title="队员名称" alt="油头小歪"></a></li>
+			<li><a href="#"><img src="images/team3.jpg" title="队员名称" alt="烽烟无限"></a></li>
+			<li><a href="#"><img src="images/team4.jpg" title="队员名称" alt="紫铜炉"></a></li>
+			<!-- 延伸头像方法 -->
+			<li>
+				<div class="teamManpic">
+					<div>
+						<p>团队头像</p>
+						<p>80*80px</p>
+					</div>
+				</div>
+			</li>
 		</div>
-		<div class="main">1
+		<div class="main">
+			<article>	
+				<h1>文章一级标题</h1>
+				<h2>文章二级标题</h2>
+				<div class="tags">文章作者 <span><time>文章发布时间</time></span></div>
+				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+				这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+				这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+				<img src="images/task_1.jpg" alt="古老计算机的图片" />
+				<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+				这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+				这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_black">这里有一个链点击后在新窗口接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+			</article>
 		</div>
 		<div class="claerfix"></div>
 	</div>
