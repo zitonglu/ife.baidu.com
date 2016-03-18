@@ -6,8 +6,8 @@
 </head>
 <style type="text/css">
 	body{background-color: #eee;margin: 0px;padding: 20px;}
-	.box{;margin:0px;padding:0px;border: solid 1px #999;}
-	.left,.right,.main{padding:20px;margin:20px;border: solid 1px #999;}
+	.box{margin:0px;padding:0px;border: solid 1px #999;}
+	.left,.right,.main{margin:20px;border: solid 1px #999;}
 	.left{
 		float: left;
 		width: 200px;
@@ -16,17 +16,30 @@
 		position: relative;
 		float: left;
 		display: block;
-		margin-right:20px;
+		margin:20px;
 		max-width: 80px;
 		height: auto;
 		border: 1px solid #999;
 	}
 	.left>span{
 		display: block;
+		margin-top:20px;
 	}
 	.right{
 		float: right;
 		width: 120px;
+	}
+	.right li{
+		list-style:none;
+		margin-left: 20px;
+		margin-bottom: 20px;
+		padding: 0px;
+	}
+	.right>li{margin-top: 20px;}/*第一个<li>上空20px*/
+	.right li img{
+		width: 78px;
+		height: auto;
+		border: 1px solid #999;
 	}
 	.main{
 		overflow: hidden;
@@ -45,8 +58,15 @@
 			<img src="images/logo-3-1.png" alt="团队LOGO">
 			<span>阡陌前端小组<br>……</span>
 		</div>
-		<div class="right">1</div>
-		<div class="main">1</div>
+		<div class="right">
+			<li><a href="#"><img src="images/team1.jpg" alt="炎炎"></a></li>
+			<li><a href="#"><img src="images/team2.jpg" alt="油头小歪"></a></li>
+			<li><a href="#"><img src="images/team3.jpg" alt="烽烟无限"></a></li>
+			<li><a href="#"><img src="images/team4.jpg" alt="紫铜炉"></a></li>
+			<li><a href="#"><img src="images/team5.jpg" alt="some1"></a></li>
+		</div>
+		<div class="main">1
+		</div>
 		<div class="claerfix"></div>
 	</div>
 </body>
