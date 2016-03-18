@@ -6,17 +6,23 @@
 </head>
 <style type="text/css">
 	body{background-color: #eee;margin: 0px;padding: 20px;}
-	.box,
-	.left,
-	.right,
-	.main,
-	.teamName{padding: 20px;margin:20px;border: solid 1px #999;}
+	.box{;margin:0px;padding:0px;border: solid 1px #999;}
+	.left,.right,.main{padding:20px;margin:20px;border: solid 1px #999;}
 	.left{
 		float: left;
 		width: 200px;
 	}
-	.left span{
-
+	.left>img{
+		position: relative;
+		float: left;
+		display: block;
+		margin-right:20px;
+		max-width: 80px;
+		height: auto;
+		border: 1px solid #999;
+	}
+	.left>span{
+		display: block;
 	}
 	.right{
 		float: right;
@@ -25,10 +31,7 @@
 	.main{
 		overflow: hidden;
 	}
-	.teamLOGO{
-		max-width: 80px;
-		height: auto;
-	}
+
 	.claerfix{
 		content:" ";
 		display:block;
@@ -39,8 +42,8 @@
 <body>
 	<div class="box">
 		<div class="left">
-			<img src="images/logo-3-1.png" alt="团队LOGO" class="teamLOGO">
-			<span>团队名称</span>
+			<img src="images/logo-3-1.png" alt="团队LOGO">
+			<span>阡陌前端小组<br>……</span>
 		</div>
 		<div class="right">1</div>
 		<div class="main">1</div>
