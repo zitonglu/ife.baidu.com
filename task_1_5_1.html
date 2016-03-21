@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>任务二：零基础HTML及CSS编码（一）</title>
+<style>
+*{
+	font-size:16px;
+}
+.text-right{text-align:right}
+.col-sm-4,.col-sm-8{float:left;}
+body{
+	margin:0px; 
+	background-color: #dedede;
+}
+h1{
+	font-size:24px;
+}
+h2{
+	color:#939393; 
+}
+/*导航*/
+header{
+	margin: 0px;
+	padding: 0px;
+	min-height: 70px;
+	background-color: #333;
+	color: #fff;
+}
+header>nav{
+	margin-top: 12px;
+	margin-right: 20px;
+	float: right;
+}
+header nav ul li{
+	display:inline;
+	/*display: inline-block;*/
+	margin-left:20px;
+}
+header a{
+	color: #fff;
+	text-decoration:none;
+}
+header a:hover{
+	color: #ddd;
+}
+.active,.active a,.active a:hover{
+	color: #939393;
+}
+header img{
+	margin-left:40px;
+	max-width:200px;
+}
+/*文章*/
+article{
+	margin: 20px;
+	padding: 20px; 
+	background-color: #fff;
+}
+article p{
+	line-height: 30px;
+	text-indent: 2em;
+}
+.tags,.tags time{
+	color:#939393;
+	font-size: 14px;
+}
+article ul li{
+	list-style:none;
+	line-height: 30px;
+}
+figure div{
+	margin-bottom: 16px;
+	padding: 8px;
+	text-align: center;
+	width: 180px;
+	border:solid 1px #E3E3E3;
+}
+figure div img{
+	margin-top:8px;
+	max-width: 164px;
+	height: auto;
+}
+/*table's style*/
+article table{
+	width: 100%;
+	text-align: left;
+	border-collapse:collapse;
+	border: solid #999;
+	border-width:1px; 
+}
+article table th,
+article table td{
+	border:solid #999;
+	border-width:0 1px 1px 0;
+	padding-left:5px;
+}
+article table .tableBottom td {
+	padding-left:5px;
+	background-color: #A7A7A7;
+	font-weight: 800;
+} 
+article table thead{
+	color: #fff;
+	background-color: #000;
+}
+/*侧栏*/
+aside{
+	margin: 20px;
+	padding: 20px; 
+	background-color: #fff;
+}
+aside h1{
+	padding:8px 0 8px 12px;
+	border-left: solid 5px #898989;
+	font-size:16px; 
+}
+aside form{
+	width: 100%
+}
+.col-sm-4{width: 33.33333333%;}
+.col-sm-8{width: 66.66666667%;}
+aside form span{
+	padding-top: 12px;
+	font-size: 12px;
+	color: #898989;
+}
+aside form div{
+	line-height:30px;
+}
+aside form textarea{
+	width: 96%
+}
+.inputSubmit{
+	width: 100%;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	color: #fff;
+	padding-top:10px;
+	padding-bottom:10px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+.inputSubmit:focus,.inputSubmit:hover{
+	background-color: #3390b7;
+}
+/*底部*/
+footer{
+	background: #000;
+	color: #fff;
+	min-height: 100px;
+	text-align: center;
+}
+footer p{
+	padding-top:30px;
+}
+</style>
+</head>
+<body>
+<header>
+	<a href="#"><img src="images/logo.png" alt="LOGO" title="网站LOGO"></a>
+	<nav>
+		<ul>
+			<li><a href="#" title="导航链接">导航链接一</a></li>
+			<li><a href="#" title="导航链接">导航链接二</a></li>
+			<li><a href="#" title="导航链接">导航链接三</a></li>
+			<li class="active"><a href="#" title="导航链接" >导航链接四</a></li>
+		</ul>
+	</nav>
+</header>
+<!-- 第一篇 -->	
+<article>	
+	<h1>文章一级标题</h1>
+	<h2>文章二级标题</h2>
+	<div class="tags">文章作者 <span><time>文章发布时间</time></span></div>
+	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+	<img src="images/task_1.jpg" alt="古老计算机的图片" />
+	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_black">这里有一个链点击后在新窗口接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+</article>
+<!-- 第二篇 -->	
+<article>	
+	<h1>另一篇文章一级标题</h1>
+	<h2>文章二级标题</h2>
+	<div class="tags">文章作者 <span><time>文章发布时间</time></span></div>
+	<p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br>
+	这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+	<img src="images/task_1.jpg" alt="古老计算机的图片">
+		<ul>
+			<li>列表项目一</li>
+			<li>列表项目二</li>
+			<li>列表项目三</li>
+		</ul>
+</article>
+<!-- 第三篇 -->	
+<article>
+	<div>
+		<h1>图片</h1>
+		<figure>
+			<div>
+				好看的图片<br>
+				<img src="images/task_1.jpg" alt="古老计算机的图片">
+			</div>
+			<div>
+				好看的图片<br>
+				<img src="images/task_1.jpg" alt="古老计算机的图片">
+			</div>
+			<div>
+				好看的图片<br>
+				<img src="images/task_1.jpg" alt="古老计算机的图片">
+			</div>
+			<div>
+				好看的图片<br>
+				<img src="images/task_1.jpg" alt="古老计算机的图片">
+			</div>
+			<div>
+				好看的图片<br>
+				<img src="images/task_1.jpg" alt="古老计算机的图片">
+			</div>
+			<div>
+				好看的图片<br>
+				<img src="images/task_1.jpg" alt="古老计算机的图片">
+			</div>
+			<div>
+				好看的图片<br>
+				<img src="images/task_1.jpg" alt="古老计算机的图片">
+			</div>
+			<div>
+				好看的图片<br>
+				<img src="images/task_1.jpg" alt="古老计算机的图片">
+			</div>
+			<div>
+				好看的图片<br>
+				<img src="images/task_1.jpg" alt="古老计算机的图片">
+			</div>
+			<div>
+				好看的图片<br>
+				<img src="images/task_1.jpg" alt="古老计算机的图片">
+			</div>
+		</figure>
+	</div>
+</article>
+<!-- 第三篇 -->	
+<article>
+	<h1>最后一篇文章一级标题</h1>
+	<h2>文章二级标题</h2>
+	<div class="tags">文章作者 <span><time>文章发布时间</time></span></div>
+	<ol>
+		<li>排名1</li>
+		<li>排名2</li>
+		<li>排名3</li>
+	</ol>
+	<div>下面是一个表格，给表格加一个border=“1”好让你看出是一个表格</div>
+	<table>
+		<thead>
+			<tr>
+				<th>表头</th>
+				<th>表头</th>
+				<th>表头</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>表内单元格</td>
+				<td>表内单元格</td>
+				<td><a href="#">操作</a></td>
+			</tr>
+			<tr>
+				<td>表内单元格</td>
+				<td>表内单元格</td>
+				<td><a href="#">操作</a></td>
+			</tr>
+			<tr>
+				<td>表内单元格</td>
+				<td>表内单元格</td>
+				<td><a href="#">操作</a></td>
+			</tr>
+			<tr>
+				<td>表内单元格</td>
+				<td>表内单元格</td>
+				<td><a href="#">操作</a></td>
+			</tr>
+			<tr class="tableBottom">
+				<td>总计</td>
+				<td colspan="2">1000</td>
+			</tr>
+		</tbody>
+	</table>
+</article>
+<!-- 侧栏 -->
+<aside>
+	<h1>这里以后是一个侧栏，这是侧栏的标题</h1>
+	<h2 style="display: none">侧栏注册窗口标题</h2>
+<form action="">	
+	<div>
+		<label for="email" class="col-sm-4 text-right">请输入邮箱地址：</label>
+		<div class="col-sm-8">
+			<input type="email" name="email" placeholder="这是一个文本输入框"/><br><span>邮箱地址请按要求个数输入</span>
+		</div>
+	</div>
+	<div>
+		<label for="password1" class="col-sm-4 text-right">请输入密码：</label>
+		<div class="col-sm-8">
+			<input type="password" name="password1" placeholder="******" />
+		</div>
+	</div>
+	<div>
+		<label for="password2" class="col-sm-4 text-right">请重复输入密码：</label>
+		<div class="col-sm-8">
+			<input type="password" name="password2" placeholder="这是一个文本输入框"/><br><span>密码请为6-16位英文数字</span>
+		</div>
+	</div>
+	<div>
+		<label for="sex" class="col-sm-4 text-right">性别：</label>
+		<div class="col-sm-8">
+			<input type="radio" name="sex" value="male" checked="checked"/>男
+			<input type="radio" name="sex" value="female"/>女
+		</div>
+	</div>
+	<div>
+		<label for="city" class="col-sm-4 text-right">城市：</label>
+		<div class="col-sm-8">
+			<select>
+				<option>北京</option>
+				<option>上海</option>
+				<option>广州</option>
+			</select>
+		</div>
+	</div>
+	<div>
+		<label for="habit" class="col-sm-4 text-right">爱好：</label>
+		<div class="col-sm-8">
+			<input type="checkbox" name="habit">运动 <input type="checkbox" name="habit">艺术 <input type="checkbox" name="habit">科学
+		</div>
+	</div>
+	<div>
+		<label for="text" class="col-sm-4 text-right">个人描述：</label>
+		<div class="col-sm-8">
+			<textarea row="2" name="text" type="text" placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+		</div>
+	</div>
+	<input type="submit" class="inputSubmit" value="确认提交">
+</form>
+</aside>
+<!-- 版权 -->
+<footer>
+	<p>版权所有&copy;<a href="http://www.paipk.com" target="_black" style="display:none">拍拍看科技</a></p>
+</footer>
+</body>
+</html>
